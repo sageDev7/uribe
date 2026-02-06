@@ -1386,6 +1386,15 @@
                 <ul class="info-list">
                     <li class="info-item">
                         <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-text">
+                            <h4>Ubicaciones</h4>
+                            <p>Rojas<br>Junín<br>Escobar<br>Capital Federal</p>
+                        </div>
+                    </li>
+                    <li class="info-item">
+                        <div class="info-icon">
                             <i class="fab fa-whatsapp"></i>
                         </div>
                         <div class="info-text">
@@ -1427,6 +1436,16 @@
                     <div class="form-group">
                         <label for="telefono">Teléfono</label>
                         <input type="tel" id="telefono" name="telefono" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zona">Zona de Consulta</label>
+                        <select id="zona" name="zona" required>
+                            <option value="">Seleccioná una zona</option>
+                            <option value="rojas">Rojas</option>
+                            <option value="junin">Junín</option>
+                            <option value="escobar">Escobar</option>
+                            <option value="capital">Capital Federal</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="area">Área de Consulta</label>
@@ -1518,10 +1537,23 @@
         document.getElementById('contactForm').addEventListener('submit', function(e) {
             e.preventDefault();
             const nombre = document.getElementById('nombre').value;
+            const email = document.getElementById('email').value;
+            const telefono = document.getElementById('telefono').value;
+            const zona = document.getElementById('zona').options[document.getElementById('zona').selectedIndex].text;
             const area = document.getElementById('area').options[document.getElementById('area').selectedIndex].text;
             const mensaje = document.getElementById('mensaje').value;
             
-            alert('Gracias por tu consulta. Te contactaremos a la brevedad.');
+            const textoWhatsApp = `Hola! Mi nombre es ${nombre}.%0A%0A` +
+                                  `📍 Zona: ${zona}%0A` +
+                                  `📋 Área de consulta: ${area}%0A` +
+                                  `📧 Email: ${email}%0A` +
+                                  `📱 Teléfono: ${telefono}%0A%0A` +
+                                  `Mensaje:%0A${mensaje}`;
+            
+            const numeroWhatsApp = ''; // AGREGAR NÚMERO DE WHATSAPP AQUÍ
+            const urlWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${textoWhatsApp}`;
+            
+            window.open(urlWhatsApp, '_blank');
             this.reset();
         });
     </script>
