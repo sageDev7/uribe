@@ -17,14 +17,14 @@
         }
 
         :root {
-            --color-primary: #0a2540;
-            --color-primary-light: #1a3a5c;
+            --color-primary: #0a0a0a;
+            --color-primary-light: #1a1a1a;
             --color-gold: #d4af37;
             --color-gold-dark: #b8952f;
             --color-white: #ffffff;
-            --color-black: #0a0a0a;
+            --color-black: #000000;
             --color-gray: #666666;
-            --color-light: #f8f9fa;
+            --color-light: #1f1f1f;
         }
 
         body {
@@ -45,7 +45,7 @@
             top: 0;
             width: 100%;
             z-index: 1000;
-            box-shadow: 0 2px 15px rgba(10, 37, 64, 0.3);
+            box-shadow: 0 2px 15px rgba(10, 10, 10, 0.3);
         }
 
         nav {
@@ -248,7 +248,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(10, 37, 64, 0.7) 0%, rgba(10, 37, 64, 0.3) 100%);
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.7) 0%, rgba(26, 26, 26, 0.3) 100%);
         }
 
         /* SERVICIOS */
@@ -266,7 +266,7 @@
             width: 100%;
             height: 100%;
             background-image: 
-                radial-gradient(circle, rgba(10, 37, 64, 0.015) 1px, transparent 1px);
+                radial-gradient(circle, rgba(10, 10, 10, 0.015) 1px, transparent 1px);
             background-size: 30px 30px;
             pointer-events: none;
         }
@@ -289,14 +289,14 @@
 
         .section-header h2 {
             font-size: 48px;
-            color: var(--color-primary);
+            color: var(--color-white);
             margin-bottom: 20px;
             font-weight: 800;
         }
 
         .section-header p {
             font-size: 18px;
-            color: var(--color-gray);
+            color: rgba(255, 255, 255, 0.7);
             max-width: 700px;
             margin: 0 auto;
         }
@@ -314,7 +314,7 @@
         .servicio-item {
             display: grid;
             grid-template-columns: 400px 1fr;
-            background: var(--color-white);
+            background: #0a0a0a;
             overflow: hidden;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
             margin-bottom: 40px;
@@ -347,7 +347,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: linear-gradient(135deg, rgba(10, 37, 64, 0.6) 0%, rgba(212, 175, 55, 0.3) 100%);
+            background: linear-gradient(135deg, rgba(10, 10, 10, 0.6) 0%, rgba(212, 175, 55, 0.3) 100%);
         }
 
         .servicio-numero {
@@ -371,14 +371,14 @@
 
         .servicio-content h3 {
             font-size: 32px;
-            color: var(--color-primary);
+            color: var(--color-gold);
             margin-bottom: 20px;
             font-weight: 700;
         }
 
         .servicio-content p {
             font-size: 16px;
-            color: var(--color-gray);
+            color: rgba(255, 255, 255, 0.8);
             line-height: 1.8;
             margin-bottom: 25px;
         }
@@ -503,7 +503,7 @@
         /* TESTIMONIOS */
         .testimonios {
             padding: 120px 60px;
-            background: #0d1b2a;
+            background: #0a0a0a;
             position: relative;
             overflow: hidden;
         }
@@ -645,7 +645,7 @@
         /* CONTACTO */
         .contacto {
             padding: 120px 60px;
-            background: var(--color-white);
+            background: #1a1a1a;
             position: relative;
         }
 
@@ -657,7 +657,7 @@
             width: 100%;
             height: 100%;
             background-image: 
-                radial-gradient(circle, rgba(10, 37, 64, 0.02) 1px, transparent 1px);
+                radial-gradient(circle, rgba(10, 10, 10, 0.02) 1px, transparent 1px);
             background-size: 20px 20px;
             pointer-events: none;
         }
@@ -674,14 +674,14 @@
 
         .contacto-info h2 {
             font-size: 48px;
-            color: var(--color-primary);
+            color: var(--color-white);
             margin-bottom: 30px;
             font-weight: 800;
         }
 
         .contacto-info p {
             font-size: 17px;
-            color: var(--color-gray);
+            color: rgba(255, 255, 255, 0.8);
             line-height: 1.8;
             margin-bottom: 40px;
         }
@@ -711,7 +711,7 @@
 
         .info-text h4 {
             font-size: 14px;
-            color: var(--color-primary);
+            color: var(--color-gold);
             text-transform: uppercase;
             letter-spacing: 1px;
             margin-bottom: 8px;
@@ -720,7 +720,7 @@
 
         .info-text p,
         .info-text a {
-            color: var(--color-gray);
+            color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
             font-size: 16px;
             line-height: 1.6;
@@ -731,7 +731,7 @@
         }
 
         .contacto-form {
-            background: var(--color-light);
+            background: #0a0a0a;
             padding: 50px;
         }
 
@@ -741,7 +741,7 @@
 
         .form-group label {
             display: block;
-            color: var(--color-primary);
+            color: var(--color-gold);
             margin-bottom: 10px;
             font-weight: 700;
             font-size: 13px;
@@ -754,9 +754,9 @@
         .form-group select {
             width: 100%;
             padding: 16px 20px;
-            background: var(--color-white);
-            border: 2px solid #e0e0e0;
-            color: var(--color-black);
+            background: #1a1a1a;
+            border: 2px solid #2d2d2d;
+            color: var(--color-white);
             font-family: 'Lato', sans-serif;
             font-size: 15px;
             transition: all 0.3s;
@@ -778,7 +778,7 @@
             width: 100%;
             padding: 18px;
             background: var(--color-gold);
-            color: var(--color-primary);
+            color: #000000;
             border: none;
             font-weight: 700;
             font-size: 13px;
@@ -1171,8 +1171,10 @@
         <div class="hero-left">
             <div class="hero-content">
                 <div class="hero-badge">Estudio Jurídico</div>
-                <h1>Experiencia <span>y Compromiso</span> Legal</h1>
-                <p class="hero-subtitle">Asesoramiento integral en familia, sucesiones, amparos de salud, laboral y ART. Tu tranquilidad es nuestra prioridad.</p>
+                <h1>Compromiso, <span>Experiencia</span> y Rigor Jurídico</h1>
+                <p class="hero-subtitle">Estudio jurídico integrado por profesionales con distintas especialidades, lo que nos permite abordar cada caso de manera integral y estratégica. Trabajamos de forma coordinada para ofrecer soluciones jurídicas precisas, eficientes y adaptadas a cada situación.</p>
+                <p class="hero-subtitle">Contamos con profesionales especializados en familia, sucesiones, laboral, ART, accidentes de tránsito, amparos de salud y mediación. <strong style="color: var(--color-gold);">Asesoramos empresas y PYMEs.</strong></p>
+                <p class="hero-subtitle" style="margin-top: 25px;"><strong style="color: var(--color-gold);">Ubicaciones:</strong> Rojas, Junín, Escobar y Capital Federal</p>
                 <div class="hero-cta">
                     <a href="#contacto" class="btn btn-gold">
                         <i class="fab fa-whatsapp"></i>
